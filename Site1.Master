@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Book_Store.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--script-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div>
+             <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-book"></i> bookly </a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search Here..." class="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <div id="cart-btn"><img src="images/shopping-cart_3916627.svg" alt=""></div>
+                <div id="login-btn" class="fas fa-user"></div>
+                <a  href="regiser.aspx"><img src="images/register icon.png" alt=""></a>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#featured">Featured</a>
+                <a href="#arrivals">Arrivals</a>
+                <a href="#reviwes">Reviwes</a>
+                <a href="#bloges">Blogs</a>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- bottom navbar -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviwes" class="fas fa-comments"></a>
+        <a href="#contact" class="fas fa-blogs"></a>
+    </nav>
+    <!-- cart page -->
+    <div class="cart-form-container">
+        <div id="close-cart-btn" class="fas fa-times"></div>
+        <h2>your cart</h2>
+        <div class="image">
+            <img src="images/img-1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>featured book</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+        <div class="image">
+            <img src="images/img-2.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>featured book</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+        <div class="image">
+            <img src="images/img-3.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>featured book</h3>
+            <div class="price">$15.99 <span>$20.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+
+
+
+            
+
+
+
+                <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our locations</h3>
+                <a href="#"><i class="fac fa-map-marker-alt"></i> India </a>
+                <a href="#"><i class="fac fa-map-marker-alt"></i> USA </a>
+                <a href="#"><i class="fac fa-map-marker-alt"></i> Japan </a>
+                <a href="#"><i class="fac fa-map-marker-alt"></i> France </a>
+                <a href="#"><i class="fac fa-map-marker-alt"></i> Syria </a>
+                <a href="#"><i class="fac fa-map-marker-alt"></i> Africa </a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fac fa-arrow-right"></i> Home </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> Featured </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> Arrivals </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> Reviews </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> Blogs </a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fac fa-arrow-right"></i> account info </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> order items </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> privacy policy </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> payment method </a>
+                <a href="#"><i class="fac fa-arrow-right"></i> our serivces </a>
+            </div>
+            <div class="box">
+                <h3>content info</h3>
+                <a href="#"><i class="fac fa-phone"></i> +123-456-7789 </a>
+                <a href="#"><i class="fac fa-phone"></i> +111-222-3334 </a>
+                <a href="#"><i class="fac fa-envelope"></i> obai@gmail.com </a>
+                <img src="images/worldmap.jpg" class="map" alt="">
+            </div>
+        </div>
+        <div class="share">
+            <a href="#" class="fas fa-facebook"></a>
+            <a href="#" class="fas fa-twitter"></a>
+            <a href="#" class="fas fa-imstagram"></a>
+            <a href="#" class="fas fa-linkedin"></a>
+            <a href="#" class="fas fa-pinterest"></a>
+        </div>
+        <div class="cerdit">created by <span>mr. obai mouhammad</span></div>
+    </section>
+        </div>
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
